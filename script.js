@@ -20,10 +20,7 @@ const mailMe = document.querySelector('.myMailContact')
 mailMe.addEventListener('click' , ()=>{
     location.href = 'mailto:festusakinboye@gmail.com'
 })
-const myResume = document.querySelector('.myResumeDownload')
-myResume.addEventListener('click' , ()=>{
-    location.href = 'myRESUME.pdf'
-})
+
 // hamburger menu
 const burgermenu = document.querySelector('.hamburger')
 const closeAbout = document.querySelector('.closeAbout')
