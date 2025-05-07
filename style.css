@@ -15,7 +15,8 @@
     --textFonts: "Inter", sans-serif;
 }
 body{
-    height: 100svh;
+    min-height: 100svh;
+    max-height: fit-content;
     width: 100svw;
     overflow: hidden;
     display: flex;
