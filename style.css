@@ -98,7 +98,7 @@ body{
 }
 .sec1::-webkit-scrollbar{width: 5px;}
 .sec1::-webkit-scrollbar-track{background-color: #3434ad;}
-.sec1::-webkit-scrollbar-thumb{background-color: #c4c4c4; border-radius: 10px;}
+.sec1::-webkit-scrollbar-thumb{background: transparent; border-radius: 10px;}
 .sec2{
     position: relative;
     flex: 4;
