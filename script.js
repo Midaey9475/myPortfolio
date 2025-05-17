@@ -34,9 +34,3 @@ closeAbout.addEventListener('click' , ()=>{
     myAbout.style.display = 'none'
     burgermenu.style.display = 'block'
 })
-
-// window.addEventListener('load' , ()=>{
-//     console.log('myabj')
-//     if(myAbout.style.display = 'flex'){myAbout.style.display = 'flex'}
-//     else{myAbout.style.display = 'none'}
-// })
