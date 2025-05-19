@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akinboye Festus Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section class="sec1">
         <div>
             <div class="imageDiv">
-                <img src="profilePic2.jpg" alt="">
-                <h1>Akinboye Festus</h1>
+                <img src="pp.png" alt="">
+                <!-- <h1>Akinboye Festus</h1> -->
             </div>
             <div class="aboutLists">
                 <ul>
@@ -22,6 +23,10 @@
                     <li class="aboutClick">
                         <i class="fi fi-rr-user"></i>
                         About Me
+                    </li>
+                    <li class="projectsClick">
+                        <i class="fi fi-br-folder-tree"></i>
+                        Projects
                     </li>
                     <li class="myResumeDownload">
                         <i class="fi fi-rs-resume"></i>
@@ -98,12 +103,12 @@
         
         <div class="myAbout">
 
-            <div class="closeAbout">
-                <img src="close.png" alt="">
+            <div class="closeAbout" id="clAbt">
+                <img src="menus.png" alt="">
             </div>
 
             <div class="aboutHeader">
-                <h1 style="color: #3434ad;">About Me.</h1>
+                <h1 style="color: #ff69b4;">About Me.</h1>
                 <i class="fi fi-bs-user"></i>
             </div>
             <div class="aboutMe">
@@ -174,6 +179,77 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="allProjects">
+
+            <div class="closeAbout" id="clPr">
+                <img src="menus.png" alt="">
+            </div>
+            <h1>My Projects</h1>
+
+            <div class="projct">
+                <p>[📷]&ensp;Dog Foodie Online Shop</p>
+                <p>📝&ensp;A responsive eCommerce application for browsing and ordering dog foods, with a simple cart count.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS &nbsp; ♦ JavaScript</p>
+                <p>🔗 &ensp;<a href="https://dog-foodies-online-shop.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/Dog-Foodies-online-shop" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Analytics Website Challenge</p>
+                <p>📝&ensp;Built a responsive analytics website as part of an online challenge, showcasing UI design skills.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS</p>
+                <p>🔗 &ensp;<a href="https://analytics-challenge-k5fn.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/Analytics-challenge" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Real Estate Website (static sample)</p>
+                <p>📝&ensp;A clean, responsive static website for a fictional real estate company, built using only HTML and CSS. It showcases property listings, company info, and contact details with a professional layout—perfect for demonstrating front-end structure and visual design fundamentals.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS</p>
+                <p>🔗 &ensp;<a href="https://joak-real-estate.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/JOAK-Real-Estate" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Tic Tac Toe</p>
+                <p>📝&ensp;A smart browser-based Tic-Tac-Toe game.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS &nbsp; ♦ JavaScript</p>
+                <p>🔗 &ensp;<a href="https://tic-tac-toe-three-tawny-73.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/TicTacToe" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Lemonade Fruit Drinks (static sample)</p>
+                <p>📝&ensp;A vibrant and refreshing web experience tailored for a fruit drink brand. The site blends bold visuals with a clean layout to highlight product appeal, encourage customer engagement, and promote brand identity.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS</p>
+                <p>🔗 &ensp;<a href="https://lemonade-store-website.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/Lemonade-store-website" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Password Generator</p>
+                <p>📝&ensp;A secure and user-friendly tool designed to generate strong, customizable passwords in seconds. Built with simplicity and security in mind, it offers options like length control, character type selection, to help users enhance their digital safety effortlessly.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS &nbsp; ♦ JavaScript</p>
+                <p>🔗 &ensp;<a href="https://a-sample-password-generator.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/A-Sample-Password-Generator" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Spade Hotel</p>
+                <p>📝&ensp;A sleek, responsive website designed to elevate the guest experience.  It features intuitive navigation, booking functionality, and elegant visuals that reflect the hotel’s brand.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS &nbsp; ♦ JavaScript</p>
+                <p>🔗 &ensp;<a href="https://spade-hotel.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/Spade-Hotel" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Calculator</p>
+                <p>📝&ensp;A versatile calculator that handles both basic arithmetic and advanced scientific functions. Designed for accuracy and ease of use, it features a clean interface, real-time computations, and responsive design—ideal for everyday use and academic needs alike.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS &nbsp; ♦ JavaScript</p>
+                <p>🔗 &ensp;<a href="https://new-sample-calculator.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/NewSampleCalculator" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct">
+                <p>[📷]&ensp;Grading System</p>
+                <p>📝&ensp;A simple grading system website to calculate student score and average total mark.</p>
+                <p>🔧&ensp;♦ HTML &nbsp; ♦ CSS &nbsp; ♦ JavaScript</p>
+                <p>🔗 &ensp;<a href="https://grading-system-khaki-xi.vercel.app/" target="_blank">[live Demo]</a> &ensp; <a href="https://github.com/Midaey9475/Grading-System" target="_blank">[Source Code]</a></p>
+            </div>
+            <div class="projct" style="box-shadow: 2px 2px 2px #ff69b4;">
+                <h1 style="text-align: left;">For more; <a href="https://github.com/Midaey9475" style="color: #fff; text-decoration: none; font-size: medium;" target="_blank"><i class="fi fi-brands-github"></i></a></h1>
+            </div>
+            
+        </div>
+        
+
+
     </section>
 <script src="script.js"></script>
 </body>

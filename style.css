@@ -4,6 +4,7 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-chubby/css/uicons-regular-chubby.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 *{
     padding: 0;
     margin: 0;
@@ -25,7 +26,7 @@ body{
     height: 100svh;
     background-color: rgb(20, 22, 30);
     flex: 1;
-    box-shadow: 1px 0px 10px #008080;
+    box-shadow: 1px 0px 5px #008080;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -42,7 +43,7 @@ body{
         font-size: calc(5px + 1vw);
         text-transform: uppercase;
         position: relative;
-        img{width: 100%; height: 100%;}
+        img{width: auto; height: 100%;}
         h1{
             position: absolute;
             bottom: 0%;
@@ -93,7 +94,7 @@ body{
     }
 }
 .sec1::-webkit-scrollbar{width: 5px;}
-.sec1::-webkit-scrollbar-track{background-color: #3434ad;}
+.sec1::-webkit-scrollbar-track{background-color: #ff69b4;}
 .sec1::-webkit-scrollbar-thumb{background: transparent; border-radius: 10px;}
 .sec2{
     position: relative;
@@ -114,19 +115,32 @@ body{
         p{font-family: var(--textFonts); font-size: calc(.8rem + 1vw);}
         .myTechStark{
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            align-items: center; justify-content: center;
+            flex-wrap: wrap;
             gap: 50px;
             div{
                 display: flex; flex-direction: column;
                 align-items: center; justify-content: center;
                 flex-wrap: wrap;
                 row-gap: 5px;
+                width: 80px;
                 img{
-                    height: 50px;
+                    height: 30px;
                     width: auto;
                 }
-                b{font-size: calc(.5rem + 1vw); font-weight: 400;}
+                b{font-size: calc(.1rem + 1vw); font-weight: 400;}
+            }
+            div:nth-of-type(1){
+                box-shadow: 0px 3px 3px #E34F26;
+            }
+            div:nth-of-type(2){
+                box-shadow: 0px 3px 3px #264DE4;
+            }
+            div:nth-of-type(3){
+                box-shadow: 0px 3px 3px #F7DF1E;
+            }
+            div:nth-of-type(4){
+                box-shadow: 0px 3px 3px #61DAFB;
             }
         }
         .myProjects{
@@ -177,7 +191,7 @@ body{
         display: none;
         .aboutHeader{
             border-bottom: 1px dashed rgba(236, 236, 236, 0.2);
-            color: #3434ad; font-family: var(--headingFont);
+            color: #ff69b4; font-family: var(--headingFont);
             display: flex;
             align-items: center; justify-content: space-between;
             padding: 5px;
@@ -208,9 +222,9 @@ body{
                     text-decoration: none;
                     font-size: 10px;
                     font-weight: bolder;
-                    border: 2px solid #3434ad;
+                    border: 2px solid #ff69b4;
                     padding: 12px 20px;
-                    color: #3434ad;
+                    color: #ff69b4;
                     transition: all .6s;
                 }
                 a:hover{color: #c4c4c4; border: #c4c4c4 2px solid;}
@@ -246,7 +260,44 @@ body{
             }
         }
     }
+
+    .allProjects{
+        position: absolute;
+        width: 100%; height: 100%;
+        background-color: rgb(20, 22, 30);
+        display: flex; flex-direction: column;
+        padding: 50px;
+        row-gap: 30px;
+        overflow-y: scroll;
+        display: none;
+        h1{
+            font-family: var(--headingFont);
+            color: #f6f8fc; text-align: center;
+            padding: 5px;
+            border-bottom: 1px dashed rgba(236, 236, 236, 0.2);
+        }
+        .projct{
+            border: 2px solid none;
+            box-shadow: 1px 1px 5px #ff69b4;
+            padding: 5px;
+            color: #fff;
+            p{
+                font-size: small;
+                border-bottom: 2px dashed #008080;
+                padding: 10px 0px;
+                text-align: justify;
+                a{
+                    text-decoration: none;
+                    color: #ff69b4;
+                }
+                a:hover{text-decoration: underline; color: #3434ad;}
+            }
+        }
+    }
 }
+.sec2 .allProjects::-webkit-scrollbar{width: 5px;}
+.sec2 .allProjects::-webkit-scrollbar-track{background-color: #008080;}
+.sec2 .allProjects::-webkit-scrollbar-thumb{background-color: #c4c4c4; border-radius: 10px;}
 .sec2 .myAbout::-webkit-scrollbar{width: 5px;}
 .sec2 .myAbout::-webkit-scrollbar-track{background-color: #008080;}
 .sec2 .myAbout::-webkit-scrollbar-thumb{background-color: #c4c4c4; border-radius: 10px;}
@@ -258,7 +309,6 @@ body{
     display: none;
 }
 .closeAbout{
-    border: 1px solid silver;
     display: grid; place-content: center;
     border-radius: 50%;
     width: 40px;
@@ -268,6 +318,7 @@ body{
     position: fixed;
     right: 20px; top: 20px;
     display: none;
+    img{width: 100%; height: auto;}
 }
 @media all and (max-width: 1024px) {
     .sec1{flex: 1.5;}
@@ -287,15 +338,24 @@ body{
         .frontNameDiv{
             /* border: 2px solid red; */
             .myTechStark{
-                max-width: 90%;
+                width: 100%;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 gap: 20px;
                 div img{height: 30px;}
             }
-            .myProjects .theProjects .projct{
-                p{font-size: calc(4px + 1vw);}
+            .myProjects .theProjects{
+                grid-template-columns: auto;
+                .projct{
+                p{font-size: calc(7px + 1vw);}
+                p:nth-of-type(2){
+                    display: none;
+                }
+                p:nth-of-type(3){
+                    display: none;
+                }
             }
+        }
         }
         .myAbout{
             padding: 16px;
@@ -306,13 +366,13 @@ body{
                 row-gap: 40px;
                 .myBrief{
                     width: 100%;
-                    b{font-size: smaller;}
-                    p{font-size: small;}
+                    b{font-size: calc(10px + 2vw);}
+                    p{font-size: calc(10px + 1vw);}
                 }
                 .myPasona{
                     width: 100%;
-                    b{font-size: smaller;}
-                    p{font-size: small;}
+                    b{font-size: calc(10px + 2vw);}
+                    p{font-size: calc(10px + 1vw);}
                     a{
                         font-size: calc(4px + 1vw);
                         padding: 8px 20px;
@@ -327,8 +387,8 @@ body{
                     .serviceSub{
                         flex: 1;
                         img{height: 40px; width: auto;}
-                        h6{font-size: calc(8px + 1vw);}
-                        p{font-size: calc(8px + .5vw);}
+                        h6{font-size: calc(12px + 1vw);}
+                        p{font-size: calc(8px + 1vw);}
                     }
                 }
             }
@@ -348,9 +408,11 @@ body{
 @media all and (max-height: 568px) {
     .sec1{
         overflow-y: scroll;
+        .imageDiv{height: 150px;}
     }
     .sec2 .frontNameDiv{
         row-gap: 20px;
+        width: 100%;
         h1{font-size: calc(10px + 1vw);}
         p{font-size: small;}
         .myTechStark{
@@ -360,12 +422,14 @@ body{
             }
         }
     }
-    .sec2 .frontNameDiv .myProjects .projct{
+    .sec2 .frontNameDiv .myProjects .theProjects{
+            grid-template-columns: auto auto;
+        .projct{
         p:nth-of-type(2){
             display: none;
         }
         p:nth-of-type(3){
             display: none;
         }
-    }
+    }}
 }
