@@ -16,8 +16,8 @@
     --textFonts: "Inter", sans-serif;
 }
 body{
-    min-height: 100svh;
-    width: 100svw;
+    min-height: 100dvh;
+    width: 100dvw;
     overflow: hidden;
     display: flex;
     background-color: rgb(20, 22, 30);
@@ -307,6 +307,7 @@ body{
     top: 20px; left: 20px;
     cursor: pointer; z-index: 2;
     display: none;
+    z-index: 10;
 }
 .closeAbout{
     display: grid; place-content: center;
@@ -317,9 +318,39 @@ body{
     cursor: pointer;
     position: fixed;
     right: 20px; top: 20px;
+    z-index: 10;
     display: none;
     img{width: 100%; height: auto;}
 }
+.allClose{
+    position: absolute;
+    border: none;
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 9;
+    background-color: #0080804a;
+    display: none;
+    
+}
+
+
+/* .frontNameDiv, .myAbout, .allProjects {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.frontNameDiv.active,
+.myAbout.active,
+.allProjects.active {
+  display: flex;
+  opacity: 1;
+} */
+
+
+
+
+
 @media all and (max-width: 1024px) {
     .sec1{flex: 1.5;}
     .sec2 .myAbout{
