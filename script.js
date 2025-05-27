@@ -68,12 +68,7 @@ allClose.addEventListener('click' , ()=>{
     clPg.style.display = !subPages ? 'none' : 'block'
 })
 
-
-
-
-
-
-
+// Utility pages
 // const pages = {
 //   '#home': document.querySelector('.frontNameDiv'),
 //   '#about': document.querySelector('.myAbout'),
